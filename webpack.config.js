@@ -1,10 +1,13 @@
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-    entry: './main.js',
+    entry: './index.js',
     output: {
         path: path.resolve(__dirname, './dist/'),
         filename: 'bundle.js'
     },
+    devtool: "source-map",
     module: {
         rules: [{
 		test: /\.js$/,
@@ -14,5 +17,10 @@ module.exports = {
 		    presets: ['@babel/preset-env']
 		}
         }]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: './index.html' //relative to root of the output path
+        })
+    ]
 }
