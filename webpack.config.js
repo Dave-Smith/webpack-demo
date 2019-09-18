@@ -1,5 +1,6 @@
 var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: './index.js',
@@ -19,12 +20,13 @@ module.exports = {
         },
         {
             test: /\.css$/,
-            loaders: ['style-loader', 'css-loader'] // loaders are processed right to left
+            loaders: [MiniCssExtractPlugin.loader, 'css-loader'] // loaders are processed right to left
         }]
     },
     plugins: [
         new HtmlWebpackPlugin({
             filename: './index.html' //relative to root of the output path
-        })
+        }),
+        new MiniCssExtractPlugin({filename: 'style.css'})
     ]
 }
