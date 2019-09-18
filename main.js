@@ -1,5 +1,5 @@
-import add from './add';
-import multiply from './multiply';
+var add = require('./add');
+var multiply = require('./multiply');
 
 const addTotal = add(5, 8);
 const multipleTotal = multiply(5, 8);

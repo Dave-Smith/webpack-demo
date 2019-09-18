@@ -1,5 +1,4 @@
-var x = function(a, b) {
+var multiple = function(a, b) {
     return a * b;
 }
-declare var multiply = x;
-export default multiply;
+module.exports = multiple;
