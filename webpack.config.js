@@ -10,12 +10,16 @@ module.exports = {
     devtool: "source-map",
     module: {
         rules: [{
-		test: /\.js$/,
-		exclude: /node_modules/,
-		loader: 'babel-loader',
-		options: {
-		    presets: ['@babel/preset-env']
-		}
+	    test: /\.js$/,
+	    exclude: /node_modules/,
+	    loader: 'babel-loader',
+	    options: {
+	        presets: ['@babel/preset-env']
+	    }
+        },
+        {
+            test: /\.css$/,
+            loaders: ['style-loader', 'css-loader'] // loaders are processed right to left
         }]
     },
     plugins: [

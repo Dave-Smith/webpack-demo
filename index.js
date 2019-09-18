@@ -1,6 +1,8 @@
 import add from './add';
 import multiply from './multiply';
 
+import './style.css';
+
 (function bootstrap(){
 	const totalAdd = add(5, 8);
 	const totalMultiply = multiply(5, 8);
