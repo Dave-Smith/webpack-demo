@@ -18,21 +18,22 @@ Make sure you have Node.js and npm installed on your machine.
 
    ```bash
    git clone https://github.com/dave-smith/webpack-demo.git
+   ```
+2. Navigate to the project directory:
 
-	2.	Navigate to the project directory:
+   ```bash
+   cd webpack-demo
+   ```
 
-cd webpack-demo
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
 
-	3.	Install dependencies:
+### Build and Run
 
-npm install
-
-
-
-Build and Run
-
-Development
+#### Development
 
 Run the following command to start a development server:
 
@@ -42,7 +43,7 @@ npm run start
 
 This will open the application in your default web browser.
 
-Production
+#### Production
 
 To build the project for production, use:
 
@@ -52,17 +53,16 @@ npm run build
 
 This will generate optimized files in the dist directory.
 
-Additional Information
+### Additional Information
 
 Add any additional information or features about the project here.
 
 Built With
 
-	•	Webpack - Module bundler
-	•	Babel - JavaScript compiler
-	•	…
+- Webpack - Module bundler
+- Babel - JavaScript compiler
 
-License
+### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
