@@ -61,6 +61,7 @@ Built With
 
 - Webpack - Module bundler
 - Babel - JavaScript compiler
+- html-webpack-plugin
 
 ### License
 
