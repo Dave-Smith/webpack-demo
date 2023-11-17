@@ -36,7 +36,9 @@ Development
 
 Run the following command to start a development server:
 
+```bash
 npm run start
+```
 
 This will open the application in your default web browser.
 
@@ -44,7 +46,9 @@ Production
 
 To build the project for production, use:
 
+```bash
 npm run build
+```
 
 This will generate optimized files in the dist directory.
 
