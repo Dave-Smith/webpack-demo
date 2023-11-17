@@ -2,7 +2,7 @@
 
 This is a simple demonstration of using Webpack for JavaScript projects.
 
-I used this project for a talk I gave to showase how webpack works
+I used this project for a talk I gave to showase how webpack works. The demo follows a progression of no webpack to webpack to more advanced webpack configurations. Use the git tags v1 - v5 to follow the progression
 
 ## Getting Started
 
